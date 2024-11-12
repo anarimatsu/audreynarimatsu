@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime 
+sudo apt update 
+sudo apt install -y pip 
+sudo mv /usr/lib/python3.12/EXTERNALLY-MANAGED \
+ /usr/lib/python3.12/EXTERNALLY-MANAGED.old 
+pip3 install yfinance 
+pip3 install boto3
